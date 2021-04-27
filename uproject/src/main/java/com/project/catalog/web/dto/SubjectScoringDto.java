@@ -2,21 +2,30 @@ package com.project.catalog.web.dto;
 
 public class SubjectScoringDto {
 
-    //Constructors
-    public SubjectScoringDto(Integer coursePercent, Integer seminaryPrecent) {
-        this.coursePercent = coursePercent;
-        this.seminaryPrecent = seminaryPrecent; }
-
-    public SubjectScoringDto() {}
-
-    //Getters + Setters
-    public Integer getCoursePercent() { return coursePercent; }
-    public void setCoursePercent(Integer coursePercent) { this.coursePercent = coursePercent; }
-    public Integer getSeminaryPrecent() { return seminaryPrecent; }
-    public void setSeminaryPrecent(Integer seminaryPrecent) { this.seminaryPrecent = seminaryPrecent; }
-
-    //Fields;
     private Integer coursePercent;
-    private Integer seminaryPrecent;
+    private Integer seminaryPercent;
 
+    public SubjectScoringDto() {
+    }
+
+    public SubjectScoringDto(Integer coursePercent, Integer seminaryPercent) {
+        this.coursePercent = coursePercent;
+        this.seminaryPercent = seminaryPercent;
+    }
+
+    public Integer getCoursePercent() {
+        return coursePercent;
+    }
+
+    public void setCoursePercent(Integer coursePercent) {
+        this.coursePercent = coursePercent;
+    }
+
+    public Integer getSeminaryPercent() {
+        return seminaryPercent;
+    }
+
+    public void setSeminaryPercent(Integer seminaryPercent) {
+        this.seminaryPercent = seminaryPercent;
+    }
 }

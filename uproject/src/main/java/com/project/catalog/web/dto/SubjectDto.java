@@ -1,32 +1,50 @@
 package com.project.catalog.web.dto;
 
 public class SubjectDto {
-    //Getters And Setters
-    public String getName() { return name; }
-    public void setName(String name) { this.name = name; }
-    public Integer getCreditPuncte() { return creditPuncte; }
-    public void setCreditPuncte(Integer creditPuncte) { this.creditPuncte = creditPuncte; }
-    public boolean isOptional() { return isOptional; }
-    public void setOptional(boolean optional) { isOptional = optional; }
-    public SubjectScoringDto getSubject() { return subject; }
-    public void setSubject(SubjectScoringDto subject) { this.subject = subject; }
-    public long getId() { return id; }
 
-    //Fields;
+    private Long id;
     private String name;
-    private Integer creditPuncte;
-    private boolean isOptional;
-    private SubjectScoringDto subject;
+    private Integer creditPoints;
+    private Boolean isOptional;
+    private SubjectScoringDto subjectScoring;
 
+    public Long getId() {
+        return id;
+    }
 
-
-    public void setId(long id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
-    private long id;
+    public String getName() {
+        return name;
+    }
 
+    public void setName(String name) {
+        this.name = name;
+    }
 
+    public Integer getCreditPoints() {
+        return creditPoints;
+    }
 
+    public void setCreditPoints(Integer creditPoints) {
+        this.creditPoints = creditPoints;
+    }
 
+    public Boolean getOptional() {
+        return isOptional;
+    }
+
+    public void setOptional(Boolean optional) {
+        isOptional = optional;
+    }
+
+    public SubjectScoringDto getSubjectScoring() {
+        return subjectScoring;
+    }
+
+    public void setSubjectScoring(SubjectScoringDto subjectScoring) {
+        this.subjectScoring = subjectScoring;
+    }
 }
